@@ -1,8 +1,10 @@
 module.exports = {
+  pathPrefix: `/`,
   siteMetadata: {
     title: "Zeing",
   },
   plugins: [
+    `gatsby-plugin-offline`,
     "gatsby-plugin-postcss",
     // {
     //   resolve: "gatsby-plugin-google-analytics",

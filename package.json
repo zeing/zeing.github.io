@@ -5,7 +5,7 @@
   "description": "Zeing",
   "author": "Witthawin Sirisiwaphak",
   "keywords": [
-    "gatsby"
+    "/zeing.github.io"
   ],
   "scripts": {
     "develop": "gatsby develop",
@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b main"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",

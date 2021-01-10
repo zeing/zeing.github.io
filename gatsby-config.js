@@ -1,7 +1,9 @@
 module.exports = {
-  pathPrefix: `/`,
+  pathPrefix: '/',
   siteMetadata: {
-    title: "Zeing",
+    title: 'Zeing',
+    siteUrl: 'https://zeing.me',
+    description: `Test`,
   },
   plugins: [
     `gatsby-plugin-offline`,

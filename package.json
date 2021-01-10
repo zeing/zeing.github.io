@@ -13,12 +13,14 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && cp CNAME public && gh-pages -b public -d public",
+    "ph-clean": "gh-pages-clean"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "autoprefixer": "^10.2.1",
+    "classnames": "^2.2.6",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.9.0",
     "gatsby-plugin-google-analytics": "^2.9.0",

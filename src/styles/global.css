@@ -29,3 +29,7 @@ img, embed, object, video {
 
 .fullscreen { height: 100vh; width: 100vw; object-fit: cover; object-position: center; }
 
+/* Cursor */
+.typed-cursor {
+  @apply text-white text-opacity-75
+}

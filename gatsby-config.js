@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '/',
   siteMetadata: {
     title: 'Zeing',
     siteUrl: 'https://zeing.me',

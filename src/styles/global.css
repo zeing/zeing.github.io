@@ -1,6 +1,6 @@
 @tailwind base;
 html {
-  @apply select-none	
+  @apply select-none font-display
 }
 
 img, embed, object, video {

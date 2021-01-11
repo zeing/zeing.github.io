@@ -11,7 +11,15 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <script src="https://kit.fontawesome.com/109a8733e9.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          src="https://kit.fontawesome.com/109a8733e9.js"
+          crossorigin="anonymous"
+        ></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

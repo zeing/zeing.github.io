@@ -1,52 +1,39 @@
 import * as React from "react"
 import { Link } from "gatsby"
-
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import error from "../images/error.svg"
 
 // markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
+    <main className="bg-gradient-to-r from-blue-900 to-blue-800 text-white min-h-screen flex items-center">
+      <div className="container mx-auto p-4 flex flex-wrap items-center">
+        <div className="w-full md:w-5/12 text-center p-4">
+          <img src={error} alt="Not Found" />
+        </div>
+        <div className="w-full md:w-7/12 text-center md:text-left p-4">
+          <div className="text-xl md:text-3xl font-medium mb-4">
+            Oops. This page has gone missing.
+          </div>
+          <div className="text-lg mb-8">
+            You may have mistyped the address or the page may have moved.
+          </div>
+          {/* <a href="#" className="border border-white rounded p-4">Go Home</a> */}
+          {process.env.NODE_ENV === "development" ? (
+            <>
+              <br />
+              Try creating a page in{" "}
+              <code className="border border-white rounded p-4">
+                src/pages/
+              </code>
+              <br />
+            </>
+          ) : null}
+          <br />
+          <Link to="/" className="border border-white rounded p-4">
+            Go home
+          </Link>
+        </div>
+      </div>
     </main>
   )
 }

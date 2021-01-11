@@ -7,16 +7,33 @@ module.exports = {
     url: "https://zeing.me", // No trailing slash allowed!
     image: "/images/thumbnail.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@wwz",
+    author: "zeing",
+    social: [
+      {
+        name: `Twitter`,
+        url: `https://twitter.com/wwz`,
+      },
+      {
+        name: `GitHub`,
+        url: `https://github.com/zeing`,
+      },
+    ],
   },
   plugins: [
     "gatsby-plugin-offline",
     "gatsby-plugin-postcss",
-    // {
-    //   resolve: "gatsby-plugin-google-analytics",
-    //   options: {
-    //     trackingId: "",
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "G-SWWT8QB292",
+      },
+    },
+    {
+      resolve: "gatsby-source-medium",
+      options: {
+        username: "@zeing", // Medium user name
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
@@ -53,4 +70,4 @@ module.exports = {
       __key: "videos",
     },
   ],
-};
+}

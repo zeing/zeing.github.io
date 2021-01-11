@@ -14,7 +14,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "gatsby build --prefix-paths && cp CNAME public && gh-pages -b public -d public",
-    "ph-clean": "gh-pages-clean"
+    "ph-clean": "gh-pages-clean",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
@@ -41,6 +42,8 @@
   },
   "devDependencies": {
     "gatsby-plugin-offline": "^3.8.0",
-    "gh-pages": "^3.1.0"
+    "gatsby-source-medium": "^2.8.0",
+    "gh-pages": "^3.1.0",
+    "prettier": "^2.2.1"
   }
 }

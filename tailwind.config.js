@@ -1,13 +1,17 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx}'],
-  darkMode: 'class', // or 'media' or 'class'
+  purge: ["./src/**/*.{js,jsx}"],
+  darkMode: "class", // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      display: ["Prompt", "sans-serif"],
+      body: ["Prompt", "sans-serif"],
+    },
     extend: {},
   },
   variants: {
     extend: {
-      fontSize: ['hover', 'focus'],
-      scale: ['active', 'group-hover'],
+      fontSize: ["hover", "focus"],
+      scale: ["active", "group-hover"],
     },
   },
   plugins: [],

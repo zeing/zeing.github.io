@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "I am Zeing",
-    titleTemplate: "%s ·",
+    title: "I am",
+    titleTemplate: "%s · Zeing",
     siteUrl: "https://zeing.me",
     description: "All about zeing",
     url: "https://zeing.me", // No trailing slash allowed!

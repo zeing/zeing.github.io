@@ -10,7 +10,7 @@ const Footer = () => {
         <span className="ml-3 text-xl">Zeing</span>
       </a>
       <p className="text-sm align-bottom self-end text-white ml-4 pl-4 px-2 border-l-2">
-        © 2020 Zeing —
+        © {new Date().getFullYear()} Zeing —
         <a
           href="https://twitter.com/wwz"
           className="text-white ml-1"

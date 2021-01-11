@@ -10,8 +10,8 @@ const IndexPage = () => {
   var options = {
     strings: [
       "WITTHAWIN SIRISIWAPHAK",
-      'I\'m <span className="font-bold text-white">Eing.</span>',
-      'I\'m <span className="font-bold text-white">Software Engineer.</span>',
+      'I\'m <span class="font-bold text-white">Eing.</span>',
+      'I\'m <span class="font-bold text-white">Software Engineer.</span>',
     ],
     typeSpeed: 40,
     backSpeed: 40,
@@ -23,7 +23,7 @@ const IndexPage = () => {
     return () => {
       typed.destroy()
     }
-  }, [])
+  },[])
 
   const classIcon =
     "text-3xl text-white text-opacity-75 hover:text-white transition duration-500 ease-in-out hover:scale-125 group-hover:scale-125	transform"
@@ -57,7 +57,7 @@ const IndexPage = () => {
             )}
           </div>
           <div className="text-center">
-            <span className="text-white text-opacity-50  hover:text-white w-full my-title" />
+            <span className="text-white text-opacity-50 hover:text-white w-full my-title" />
           </div>
           <div className="flex justify-around space-x-4">
             <a href="https://fb.com/einguht" target="_blank" rel="noreferrer">

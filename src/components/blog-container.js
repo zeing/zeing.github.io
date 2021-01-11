@@ -61,17 +61,16 @@ const BlogContainer = () => {
                       </p>
                     </div>
                     <div className="flex items-center justify-between flex-wrap px-6 pb-3">
-                        <span className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
-                          Learn More
-                          </span>
-                        <span className="flex space-x-2">
-                          <span>{post.node.createdAt}</span>
-                          <span>
-                            {Math.ceil(post.node.virtuals.readingTime)} min
-                              read
-                            </span>
+                      <span className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                        Learn More
+                      </span>
+                      <span className="flex space-x-2">
+                        <span>{post.node.createdAt}</span>
+                        <span>
+                          {Math.ceil(post.node.virtuals.readingTime)} min read
                         </span>
-                      </div>
+                      </span>
+                    </div>
                   </div>
                 </Link>
               ))}

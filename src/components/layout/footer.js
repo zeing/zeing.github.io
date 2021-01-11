@@ -11,14 +11,14 @@ const Footer = () => {
       </a>
       <p className="text-sm align-bottom self-end text-white ml-4 pl-4 px-2 border-l-2">
         © 2020 Zeing —
-          <a
+        <a
           href="https://twitter.com/wwz"
           className="text-white ml-1"
           rel="noopener noreferrer"
           target="_blank"
         >
           @wwz
-          </a>
+        </a>
       </p>
     </footer>
   )

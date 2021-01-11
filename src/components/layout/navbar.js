@@ -9,23 +9,25 @@ const Navbar = () => {
 
   return (
     <header className="text-gray-600 body-font flex justify-between w-full p-5">
-      <a
-        className="flex font-medium items-center text-gray-900 mb-4 md:mb-0"
-        href="/"
-      >
-        <img
-          src={icon}
-          className="w-10 h-10 text-white p-2 bg-blue-900 rounded-full"
-          alt="logo"
-        />
-        <span className="ml-3 text-xl">Zeing</span>
-      </a>
-      <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-        <a href="/" className="mr-5 hover:text-gray-900">
-          Home
+      <div className="flex items-center">
+        <a
+          className="flex font-medium items-center text-gray-900"
+          href="/"
+        >
+          <img
+            src={icon}
+            className="w-10 h-10 text-white p-2 bg-blue-900 rounded-full"
+            alt="logo"
+          />
+          <span className="ml-3 text-xl">Zeing</span>
         </a>
-      </nav>
-      <div className="flex justify-around space-x-4">
+        <nav className="mr-auto ml-4 py-1 pl-4 border-l md:border-gray-400 flex flex-wrap items-center justify-center">
+          <a href="/" className="mr-5 hover:text-gray-900">
+            Home
+        </a>
+        </nav>
+      </div>
+      <div className="flex justify-around items-center space-x-4">
         <a href="https://fb.com/einguht" target="_blank" rel="noreferrer">
           <i className={classnames("fab fa-facebook", classIcon)}></i>
         </a>

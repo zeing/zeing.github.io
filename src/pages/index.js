@@ -10,8 +10,8 @@ const IndexPage = () => {
   var options = {
     strings: [
       "WITTHAWIN SIRISIWAPHAK",
-      'I\'m <span class="font-bold text-white">Eing.</span>',
-      'I\'m <span class="font-bold text-white">Software Engineer.</span>',
+      'I\'m <span className="font-bold text-white">Eing.</span>',
+      'I\'m <span className="font-bold text-white">Software Engineer.</span>',
     ],
     typeSpeed: 40,
     backSpeed: 40,
@@ -20,7 +20,9 @@ const IndexPage = () => {
 
   React.useEffect(() => {
     var typed = new Typed(".my-title", options)
-    return () => { typed.destroy(); }
+    return () => {
+      typed.destroy()
+    }
   }, [])
 
   const classIcon =
@@ -30,27 +32,34 @@ const IndexPage = () => {
       <Seo />
       <div className="flex h-screen justify-center items-center">
         <div className="flex flex-col space-y-4">
-          <div className="h-60 w-60 rounded-full shadow-2xl bg-white bg-opacity-30 cursor-pointer" onClick={() => setShowInfo(!showInfo)}>
-            {showInfo ?
+          <div
+            className="h-60 w-60 rounded-full shadow-2xl bg-white bg-opacity-30 cursor-pointer"
+            onClick={() => setShowInfo(!showInfo)}
+          >
+            {showInfo ? (
               <div className="flex flex-col h-full w-full justify-center items-center space-y-2">
                 <span>WITTHAWIN SIRISIWAPHAK</span>
-                <a href="mailto:zeing@outlook.com" target="_blank" rel="noreferrer">
+                <a
+                  href="mailto:zeing@outlook.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Email: zeing@outlook.com
                 </a>
               </div>
-              : <img
+            ) : (
+              <img
                 src="/images/profile.jpg"
                 className="h-full w-full rounded-full mx-auto object-cover relative"
                 width="384"
                 height="512"
               />
-            }
+            )}
           </div>
           <div className="text-center">
             <span className="text-white text-opacity-50  hover:text-white w-full my-title" />
           </div>
-          <div
-            className="flex justify-around space-x-4">
+          <div className="flex justify-around space-x-4">
             <a href="https://fb.com/einguht" target="_blank" rel="noreferrer">
               <i className={classnames("fab fa-facebook", classIcon)}></i>
             </a>
@@ -61,9 +70,9 @@ const IndexPage = () => {
             >
               <div className="relative group">
                 <i className={classnames("fab fa-instagram", classIcon)}></i>
-                <span class="flex h-2 w-2 absolute top-0 -right-0.5 transition duration-500 ease-in-out group-hover:scale-125	transform">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                <span className="flex h-2 w-2 absolute top-0 -right-0.5 transition duration-500 ease-in-out group-hover:scale-125	transform">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
                 </span>
               </div>
             </a>
@@ -81,7 +90,7 @@ const IndexPage = () => {
             >
               <i className={classnames("fab fa-linkedin", classIcon)}></i>
             </a>
-            <Link href="/blog" target="_blank" rel="noreferrer">
+            <Link href="/blog">
               <i className={classnames("fas fa-globe-asia", classIcon)}></i>
             </Link>
           </div>

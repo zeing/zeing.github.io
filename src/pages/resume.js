@@ -26,7 +26,7 @@ const ResumePage = () => {
               Experienced Software Developer since I'm a senior in university, I have joined the Co-operative Education program which gives me more experience.</p>
             <p>I am looking for new challenges in ML, DevOps, new technology, and new technique. </p>
             <p className="mt-4">
-              <Link target="_blank" href="/pdf/witthawin-resume.pdf" className="p-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md space-x-1">
+              <Link target="_blank" href="/pdf/witthawin-resume.pdf" className="p-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md space-x-2">
                 <span>Resume File</span>
                 <i className="far fa-file-archive"></i>
               </Link>
@@ -34,8 +34,8 @@ const ResumePage = () => {
           </div>
         </div>
         <div className="bg-gray-100 p-20">
-          <div className="flex space-x-10 h-full w-full flex-wrap max-w-screen-xl">
-            <h2 className="text-4xl uppercase w-1/6">Contact</h2>
+          <div className="flex space-y-10 md:space-y-0 md:space-x-10 h-full w-full flex-wrap max-w-screen-xl">
+            <h2 className="text-4xl uppercase w-full md:w-auto">Contact</h2>
             <div className="flex-1 flex-col">
               <div className="flex items-center">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" className="w-8 h-8 ">

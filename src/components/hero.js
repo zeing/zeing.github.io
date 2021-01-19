@@ -111,9 +111,9 @@ const Hero = ({ showNavbar = false, goTo }) => {
           </div>
         </div>
         {
-          goTo && <nav class="absolute bottom-0 text-white text-opacity-75 pb-10 text-2xl">
-            <Link href={goTo} class="flex justify-center animate-bounce cursor-pointer">
-              <i className="fas fa-chevron-down"></i>
+          goTo && <nav class="absolute bottom-0 text-white text-opacity-75 pb-20 md:pb-10 text-4xl">
+            <Link href={goTo} class="flex justify-center cursor-pointer">
+              <i className="fas fa-chevron-down animate-bounce"></i>
             </Link>
           </nav>
         }

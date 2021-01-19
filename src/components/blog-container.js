@@ -33,7 +33,6 @@ const BlogContainer = () => {
     <StaticQuery
       query={query}
       render={({ allMediumPost }) => {
-        console.log("allMediumPost", allMediumPost.edges)
         return (
           <section className="flex">
             <div className="grid md:grid-cols-3 grid-cols-1 gap-4 py-24 ">

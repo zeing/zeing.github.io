@@ -1,12 +1,15 @@
-import React from "react"
+import * as React from "react"
 import icon from "../../images/icon.png"
 import classnames from "classnames"
 import { Link } from "gatsby"
+import useLockBodyScroll from '../../hooks/use-lock-body-scroll'
 
 const Navbar = () => {
   const classIcon =
     "text-xl text-black text-opacity-75 hover:text-black transition duration-500 ease-in-out hover:scale-125 group-hover:scale-125	transform"
-
+  const [showMenu, setShowMenu] = React.useState(false);
+  
+  useLockBodyScroll(showMenu)
   return (
     <header className="text-gray-600 body-font flex justify-between w-full p-5">
       <div className="flex items-center">
@@ -21,13 +24,16 @@ const Navbar = () => {
           />
           <span className="ml-3 text-xl">Zeing</span>
         </a>
-        <nav className="mr-auto ml-4 py-1 pl-4 border-l md:border-gray-400 flex flex-wrap items-center justify-center">
+        <nav className="mr-auto ml-4 py-1 pl-4 border-l md:border-gray-400 hidden md:flex flex-wrap items-center justify-center">
           <a href="/" className="mr-5 hover:text-gray-900">
             Home
-        </a>
+          </a>
         </nav>
       </div>
-      <div className="flex justify-around items-center space-x-4">
+      <div className="flex items-center md:hidden">
+        <i className="fas fa-bars" onClick={() => setShowMenu(!showMenu)}></i>
+      </div>
+      <div className="justify-around items-center space-x-4 hidden md:flex">
         <a href="https://fb.com/einguht" target="_blank" rel="noreferrer">
           <i className={classnames("fab fa-facebook", classIcon)}></i>
         </a>
@@ -58,6 +64,12 @@ const Navbar = () => {
         >
           <i className={classnames("fab fa-linkedin", classIcon)}></i>
         </a>
+      </div>
+      <div className={classnames("absolute h-screen w-full bg-white inset-0",
+        [showMenu ? "block overflow-hidden" : "hidden"])}>
+        <div className="flex items-center md:hidden">
+          <i className="fas fa-bars" onClick={() => setShowMenu(!showMenu)}></i>
+        </div>
       </div>
     </header>
   )

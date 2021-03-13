@@ -28,19 +28,22 @@ const Hero = ({ showNavbar = false, goTo }) => {
   const classIcon =
     "text-3xl text-white text-opacity-75 hover:text-white transition duration-500 ease-in-out hover:scale-125 group-hover:scale-125	transform"
 
+  const classHeader =
+    "no-underline uppercase text-xs py-3 mr-8 text-opacity-75 hover:text-white transition duration-500 ease-in-out hover:scale-125 group-hover:scale-125	transform"
+
   return (
     <main className="fullscreen relative">
       <div className="flex flex-col h-screen justify-center items-center relative">
         {
           showNavbar && <nav class="px-8 pt-2 absolute top-0 text-white text-opacity-75 font-thin">
             <div class="flex justify-center">
-              <Link class="no-underline uppercase text-xs py-3 mr-8" href="/">
+              <Link className={classHeader} href="/">
                 Home
             </Link>
-              <Link class="no-underline uppercase text-xs py-3 mr-8" href="/resume">
+              <Link className={classHeader} href="/resume">
                 Resume
             </Link>
-              <Link class="no-underline uppercase text-xs py-3 mr-8" href="/blog">
+              <Link className={classHeader} href="/blog">
                 BLOG
             </Link>
             </div>
@@ -63,13 +66,13 @@ const Hero = ({ showNavbar = false, goTo }) => {
                 </a>
               </div>
             ) : (
-                <img
-                  src="/images/profile.jpg"
-                  className="h-full w-full rounded-full mx-auto object-cover relative"
-                  width="384"
-                  height="512"
-                />
-              )}
+              <img
+                src="/images/profile.jpg"
+                className="h-full w-full rounded-full mx-auto object-cover relative"
+                width="384"
+                height="512"
+              />
+            )}
           </div>
           <div className="text-center">
             <span className="text-white text-opacity-50 hover:text-white w-full my-title" />

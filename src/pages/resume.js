@@ -26,7 +26,7 @@ const ResumePage = () => {
               Experienced Software Developer since I'm a senior in university, I have joined the Co-operative Education program which gives me more experience.</p>
             <p>I am looking for new challenges in ML, DevOps, new technology, and new technique. </p>
             <p className="mt-4">
-              <Link target="_blank" href="/pdf/witthawin-resume.pdf" className="p-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md space-x-2">
+              <Link download target="_blank" href="/pdf/witthawin-resume.pdf" className="p-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md space-x-2">
                 <span>Resume File</span>
                 <i className="far fa-file-archive"></i>
               </Link>

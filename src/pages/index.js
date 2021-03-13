@@ -6,7 +6,7 @@ const IndexPage = () => {
 
   return (
     <>
-      <Hero />
+      <Hero showNavbar/>
       <Seo />
     </>
   )

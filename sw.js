@@ -27,29 +27,26 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-c9f7aa8e592befcdac5f.js"
+    "url": "webpack-runtime-22efe44a3f561f8348d2.js"
   },
   {
-    "url": "framework-6c3ead24af170cdcb87c.js"
+    "url": "framework-e263e88e39dc13000368.js"
   },
   {
-    "url": "styles.aa54ed6cf894fe52ed00.css"
+    "url": "styles.691e68bdb95eb85e9422.css"
   },
   {
-    "url": "styles-31f023f48facb69035d3.js"
-  },
-  {
-    "url": "app-de0600e1b05d7864c991.js"
+    "url": "app-e4841655095ce8bbcbe5.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "5ecd2536fc0407b18cde4592b0c7363f"
+    "revision": "664803519829201e185c8bde10c602e3"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-d1ff528f8702819955ba.js"
   },
   {
-    "url": "polyfill-48e56cca0128f3598c84.js"
+    "url": "polyfill-f21b1c47494bad250417.js"
   },
   {
     "url": "manifest.webmanifest",
@@ -60,7 +57,7 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, new workbox.strategies.CacheFirst(), 'GET');
 workbox.routing.registerRoute(/^https?:.*\/page-data\/.*\.json/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
-workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|avif|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/^https?:\/\/fonts\.googleapis\.com\/css/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 
 /* global importScripts, workbox, idbKeyval */
@@ -145,7 +142,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-de0600e1b05d7864c991.js`))) {
+  if (!resources || !(await caches.match(`/app-e4841655095ce8bbcbe5.js`))) {
     return await fetch(event.request)
   }
 

@@ -1,0 +1,2 @@
+(self.webpackChunkzeing=self.webpackChunkzeing||[]).push([[678],{7704:function(e,n,t){"use strict";t.r(n);var a=t(7294),l=t(3751),r=t(5756);n.default=function(){return a.createElement(a.Fragment,null,a.createElement(r.Z,{showNavbar:!0}),a.createElement(l.Z,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-a66505ac1d58f60340d2.js.map

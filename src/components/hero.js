@@ -35,8 +35,8 @@ const Hero = ({ showNavbar = false, goTo }) => {
     <main className="fullscreen relative">
       <div className="flex flex-col h-screen justify-center items-center relative">
         {
-          showNavbar && <nav class="px-8 pt-2 absolute top-0 text-white text-opacity-75 font-thin">
-            <div class="flex justify-center">
+          showNavbar && <nav className="px-8 pt-2 absolute top-0 text-white text-opacity-75 font-thin">
+            <div className="flex justify-center">
               <Link className={classHeader} href="/">
                 Home
             </Link>
@@ -45,6 +45,9 @@ const Hero = ({ showNavbar = false, goTo }) => {
             </Link>
               <Link className={classHeader} href="/blog">
                 BLOG
+            </Link>
+              <Link className={classHeader} href="/social">
+                SOCIAL
             </Link>
             </div>
           </nav>
@@ -114,8 +117,8 @@ const Hero = ({ showNavbar = false, goTo }) => {
           </div>
         </div>
         {
-          goTo && <nav class="absolute bottom-0 text-white text-opacity-75 pb-20 md:pb-10 text-4xl">
-            <Link href={goTo} class="flex justify-center cursor-pointer">
+          goTo && <nav className="absolute bottom-0 text-white text-opacity-75 pb-20 md:pb-10 text-4xl">
+            <Link href={goTo} className="flex justify-center cursor-pointer">
               <i className="fas fa-chevron-down animate-bounce"></i>
             </Link>
           </nav>

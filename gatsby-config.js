@@ -41,6 +41,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `2866359`,
+      },
+    },
+    {
       resolve: "gatsby-source-medium",
       options: {
         username: "@zeing", // Medium user name

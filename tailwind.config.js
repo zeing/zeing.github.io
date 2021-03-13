@@ -12,6 +12,8 @@ module.exports = {
     extend: {
       fontSize: ["hover", "focus"],
       scale: ["active", "group-hover"],
+      opacity: ['group-hover'],
+      backgroundOpacity: ['group-hover'],
     },
   },
   plugins: [],

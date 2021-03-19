@@ -6,7 +6,6 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const SocialPage = ({ data: { allInstaNode } }) => {
-  console.log(allInstaNode)
   return (
     <>
       <Hero showNavbar goTo="#detail" />
@@ -51,7 +50,7 @@ export const pageQuery = graphql`
           comments
           localFile {
             childImageSharp {
-              fluid(quality: 70, maxWidth: 600, maxHeight: 600) {
+              fluid(quality: 100, maxWidth: 600, maxHeight: 600) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }

@@ -2,6 +2,7 @@ import * as React from 'react'
 import Link from 'next/link'
 import classnames from 'classnames'
 import Typed from 'typed.js'
+import Cover from 'react-video-cover'
 
 const Hero = ({ showNavbar = false, goTo }) => {
   const [showInfo, setShowInfo] = React.useState(false)
@@ -29,6 +30,14 @@ const Hero = ({ showNavbar = false, goTo }) => {
 
   const classHeader =
     'no-underline uppercase text-xs py-3 mr-8 text-opacity-75 hover:text-white transition duration-500 ease-in-out hover:scale-125 group-hover:scale-125 transform cursor-pointer'
+
+  const videoOptions = {
+    src: '/videos/background.mp4',
+    autoPlay: true,
+    muted: true,
+    loop: true,
+    playsInline: true,
+  }
 
   return (
     <main className="fullscreen relative">
@@ -110,10 +119,11 @@ const Hero = ({ showNavbar = false, goTo }) => {
         )}
       </div>
       <div className="bg-video">
-        <video className="bg-video__content" poster="/images/background-img.jpg" autoPlay loop muted>
+        <Cover videoOptions={videoOptions} remeasureOnWindowResize />
+        {/* <video className="bg-video__content" poster="/images/background-img.jpg" autoPlay loop muted>
           <source src={'/videos/background.mp4'} type="video/mp4" />
           Your browser is not supported!
-        </video>
+        </video> */}
       </div>
     </main>
   )

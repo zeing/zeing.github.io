@@ -1,51 +1,45 @@
 {
   "name": "zeing",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
-  "description": "Zeing",
-  "author": "Witthawin Sirisiwaphak",
-  "keywords": [
-    "/zeing.github.io"
-  ],
   "scripts": {
-    "dev": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && cp CNAME public && gh-pages -b public -d public",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "next build && next export && cp CNAME public && gh-pages -b .next -d public",
     "ph-clean": "gh-pages-clean",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "autoprefixer": "^10.2.5",
-    "classnames": "^2.2.6",
-    "gatsby": "^3.0.4",
-    "gatsby-image": "^3.0.0",
-    "gatsby-plugin-google-analytics": "^3.0.0",
-    "gatsby-plugin-google-gtag": "^3.0.0",
-    "gatsby-plugin-manifest": "^3.0.0",
-    "gatsby-plugin-mdx": "^2.0.1",
-    "gatsby-plugin-postcss": "^4.0.0",
-    "gatsby-plugin-react-helmet": "^4.0.0",
-    "gatsby-plugin-sharp": "^3.0.1",
-    "gatsby-plugin-sitemap": "^3.0.0",
-    "gatsby-source-filesystem": "^3.0.0",
-    "gatsby-source-instagram": "^0.9.0",
-    "gatsby-transformer-sharp": "^3.0.0",
-    "postcss": "^8.2.8",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "autoprefixer": "^10.2.6",
+    "classnames": "^2.3.1",
+    "next": "10.2.3",
+    "postcss": "^8.3.0",
+    "postcss-nested": "^5.0.5",
+    "postcss-preset-env": "^6.7.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-helmet": "^6.1.0",
-    "tailwindcss": "^2.0.3",
-    "typed.js": "^2.0.11"
-  },
-  "devDependencies": {
-    "gatsby-plugin-offline": "^4.0.0",
-    "gatsby-source-medium": "^3.0.0",
-    "gh-pages": "^3.1.0",
+    "tailwindcss": "^2.1.2",
+    "typed.js": "^2.0.12",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format"
+    }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": "eslint --fix",
+    "*.+(json|css|md)": "prettier --write"
   }
 }

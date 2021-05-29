@@ -46,16 +46,16 @@ const Hero = ({ showNavbar = false, goTo }) => {
           <nav className="px-8 pt-2 absolute top-0 text-white text-opacity-75 font-thin">
             <div className="flex justify-center space-x-8">
               <Link href="/">
-                <span className={classHeader}>Home</span>
+                <div className={classHeader}>Home</div>
               </Link>
               <Link href="/resume">
-                <span className={classHeader}>Resume</span>
+                <div className={classHeader}>Resume</div>
               </Link>
               {/* <Link href="/blog">
                 <span className={classHeader}>BLOG</span>
               </Link> */}
               <Link href="/social">
-                <span className={classHeader}>SOCIAL</span>
+                <div className={classHeader}>SOCIAL</div>
               </Link>
             </div>
           </nav>

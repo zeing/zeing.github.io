@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "deploy": "next build && cp CNAME public && gh-pages -b .next -d public",
     "ph-clean": "gh-pages-clean",

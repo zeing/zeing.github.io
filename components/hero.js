@@ -29,7 +29,7 @@ const Hero = ({ showNavbar = false, goTo }) => {
     'text-3xl text-white text-opacity-75 hover:text-white transition duration-500 ease-in-out hover:scale-125 group-hover:scale-125	transform cursor-pointer'
 
   const classHeader =
-    'no-underline uppercase text-xs py-3 mr-8 text-opacity-75 hover:text-white transition duration-500 ease-in-out hover:scale-125 group-hover:scale-125 transform cursor-pointer'
+    'no-underline uppercase text-xs py-3 text-opacity-75 hover:text-white transition duration-500 ease-in-out hover:scale-125 group-hover:scale-125 transform cursor-pointer'
 
   const videoOptions = {
     src: '/videos/background.mp4',
@@ -44,7 +44,7 @@ const Hero = ({ showNavbar = false, goTo }) => {
       <div className="flex flex-col h-screen justify-center items-center relative">
         {showNavbar && (
           <nav className="px-8 pt-2 absolute top-0 text-white text-opacity-75 font-thin">
-            <div className="flex justify-center">
+            <div className="flex justify-center space-x-8">
               <Link href="/">
                 <span className={classHeader}>Home</span>
               </Link>
@@ -119,7 +119,7 @@ const Hero = ({ showNavbar = false, goTo }) => {
         )}
       </div>
       <div className="bg-video">
-      <Cover videoOptions={videoOptions} remeasureOnWindowResize />
+        <Cover videoOptions={videoOptions} remeasureOnWindowResize />
         {/* <video className="bg-video__content" poster="/images/background-img.jpg" autoPlay loop muted>
           <source src={'/videos/background.mp4'} type="video/mp4" />
           Your browser is not supported!

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 
 const SEO = ({ title, description, image }) => {
   const { pathname } = useRouter()
@@ -14,7 +15,8 @@ const SEO = ({ title, description, image }) => {
     twitterUsername: '@wwz',
   }
   return (
-    <Helmet title={seo.title}>
+    <Head>
+      <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
@@ -26,7 +28,7 @@ const SEO = ({ title, description, image }) => {
       {seo.title && <meta name="twitter:title" content={seo.title} />}
       {seo.description && <meta name="twitter:description" content={seo.description} />}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
-    </Helmet>
+    </Head>
   )
 }
 export default SEO

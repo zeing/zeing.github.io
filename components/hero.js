@@ -119,7 +119,7 @@ const Hero = ({ showNavbar = false, goTo }) => {
         )}
       </div>
       <div className="bg-video">
-        <Cover videoOptions={videoOptions} remeasureOnWindowResize />
+      <Cover videoOptions={videoOptions} remeasureOnWindowResize />
         {/* <video className="bg-video__content" poster="/images/background-img.jpg" autoPlay loop muted>
           <source src={'/videos/background.mp4'} type="video/mp4" />
           Your browser is not supported!

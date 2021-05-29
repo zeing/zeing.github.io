@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "next build && next export && cp CNAME public && gh-pages -b .next -d public",
+    "deploy": "next build && cp CNAME public && gh-pages -b .next -d public",
     "ph-clean": "gh-pages-clean",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   },

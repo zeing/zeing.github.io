@@ -7,14 +7,14 @@ const SEO = ({ title, description, image }) => {
   const { pathname } = useRouter()
 
   const seo = {
-    title: title || 'I am',
+    title: title || 'I am · Zeing',
     description: description || 'All about zeing',
     image: `${'https://zeing.me'}${image || '/images/thumbnail.png'}`,
     url: `${'https://zeing.me'}${pathname}`,
     twitterUsername: '@wwz',
   }
   return (
-    <Helmet title={seo.title} titleTemplate={'%s · Zeing'}>
+    <Helmet title={seo.title}>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}

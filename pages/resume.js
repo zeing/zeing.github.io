@@ -21,12 +21,18 @@ const ResumePage = () => {
           </div>
           <div className="flex-1 flex-col">
             <p className="font-bold">WITTHAWIN SIRISIWAPHAK</p>
-            <p className="text-sm font-hairline text-gray-600">Software Engineer</p>
-            <p className="mt-3">
-              Experienced Software Developer since I'm a senior in university, I have joined the Co-operative Education
-              program which gives me more experience.
+            <p className="text-sm font-hairline text-gray-600">
+              Software Engineer
             </p>
-            <p>I am looking for new challenges in ML, DevOps, new technology, and new technique. </p>
+            <p className="mt-3">
+              Experienced Software Developer since I'm a senior in university, I
+              have joined the Co-operative Education program which gives me more
+              experience.
+            </p>
+            <p>
+              I am looking for new challenges in ML, DevOps, new technology, and
+              new technique.{' '}
+            </p>
             <p className="mt-4">
               <a
                 download
@@ -67,7 +73,9 @@ const ResumePage = () => {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <div className="ml-4 text-md tracking-wide w-40">Sutthisan Road, Huai Khwang Bangkok 10310</div>
+                <div className="ml-4 text-md tracking-wide w-40">
+                  Sutthisan Road, Huai Khwang Bangkok 10310
+                </div>
               </div>
               {/* <div className="flex items-center mt-4 text-gray-600 dark:text-gray-400">
                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" className="w-8 h-8 text-gray-500">
@@ -95,7 +103,9 @@ const ResumePage = () => {
                   />
                 </svg>
                 <Link href="mailto:zeing@outlook.com">
-                  <span className="ml-4 text-md tracking-wide w-40">zeing@outlook.com</span>
+                  <span className="ml-4 text-md tracking-wide w-40">
+                    zeing@outlook.com
+                  </span>
                 </Link>
               </div>
             </div>

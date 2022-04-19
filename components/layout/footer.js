@@ -9,7 +9,12 @@ const Footer = () => {
       </a>
       <p className="text-sm align-bottom self-end text-white ml-4 pl-4 px-2 border-l-2">
         © {new Date().getFullYear()} Zeing —
-        <a href="https://twitter.com/wwz" className="text-white ml-1" rel="noopener noreferrer" target="_blank">
+        <a
+          href="https://twitter.com/wwz"
+          className="text-white ml-1"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           @wwz
         </a>
       </p>

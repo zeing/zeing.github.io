@@ -1,7 +1,7 @@
-import React from "react"
-import BlogContainer from "../../components/blog-container"
-import Layout from "../../components/layout"
-import Seo from "../../components/seo"
+import React from 'react'
+import BlogContainer from '../../components/blog-container'
+import Layout from '../../components/layout'
+import Seo from '../../components/seo'
 
 export default function Blog() {
   return (

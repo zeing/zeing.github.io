@@ -8,7 +8,8 @@
     "start": "next start",
     "deploy": "next build && cp CNAME public && gh-pages -b .next -d public",
     "ph-clean": "gh-pages-clean",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "lint": "next lint"
   },
   "dependencies": {
     "autoprefixer": "^10.4.4",

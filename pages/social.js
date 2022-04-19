@@ -7,7 +7,10 @@ const SocialPage = () => {
   return (
     <>
       <Hero showNavbar goTo="#detail" />
-      <main className="flex flex-col items-center w-full justify-center" id="detail">
+      <main
+        className="flex flex-col items-center w-full justify-center"
+        id="detail"
+      >
         <div className="flex space-y-10 md:space-y-0 md:space-x-10 h-full w-full flex-wrap max-w-screen-xl p-20">
           <iframe src="https://www.instagram.com/zeing/" className="w-full" />
         </div>

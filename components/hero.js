@@ -45,17 +45,16 @@ const Hero = ({ showNavbar = false, goTo }) => {
         {showNavbar && (
           <nav className="px-8 pt-2 absolute top-0 text-white text-opacity-75 font-thin">
             <div className="flex justify-center space-x-8">
-              <Link href="/">
+              <Link href="/" passHref>
                 <div className={classHeader}>Home</div>
               </Link>
-              <Link href="/resume">
+              <Link href="/resume" passHref>
                 <div className={classHeader}>Resume</div>
               </Link>
-              {/* <Link href="/blog">
-                <span className={classHeader}>BLOG</span>
-              </Link> */}
-              <Link href="/social">
-                <div className={classHeader}>SOCIAL</div>
+              <Link href="https://hollow.zeing.xyz">
+                <a className={classHeader} target="_blank">
+                  Hollow Bot
+                </a>
               </Link>
             </div>
           </nav>
@@ -68,7 +67,11 @@ const Hero = ({ showNavbar = false, goTo }) => {
             {showInfo ? (
               <div className="flex flex-col h-full w-full justify-center items-center space-y-2">
                 <span>WITTHAWIN SIRISIWAPHAK</span>
-                <a href="mailto:zeing@outlook.com" target="_blank" rel="noreferrer">
+                <a
+                  href="mailto:zeing@outlook.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Email: zeing@outlook.com
                 </a>
               </div>
@@ -88,7 +91,11 @@ const Hero = ({ showNavbar = false, goTo }) => {
             <a href="https://fb.com/einguht" target="_blank" rel="noreferrer">
               <i className={classnames('fab fa-facebook', classIcon)}></i>
             </a>
-            <a href="https://www.instagram.com/zeing/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.instagram.com/zeing/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="relative group">
                 <i className={classnames('fab fa-instagram', classIcon)}></i>
                 <span className="flex h-2 w-2 absolute top-0 -right-0.5 transition duration-500 ease-in-out group-hover:scale-125	transform">
@@ -97,10 +104,18 @@ const Hero = ({ showNavbar = false, goTo }) => {
                 </span>
               </div>
             </a>
-            <a href="https://www.github.com/zeing/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.github.com/zeing/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className={classnames('fab fa-github', classIcon)}></i>
             </a>
-            <a href="https://www.linkedin.com/in/witthawin/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/witthawin/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className={classnames('fab fa-linkedin', classIcon)}></i>
             </a>
             {/* <Link href="/blog">

@@ -1,10 +1,14 @@
 module.exports = {
-  purge: {
-    content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-    options: {
-      safelist: ['space-x-8'],
-    },
-  },
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
+  // purge: {
+  //   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  //   options: {
+  //     safelist: ['space-x-8'],
+  //   },
+  // },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily: {

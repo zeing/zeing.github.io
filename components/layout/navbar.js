@@ -12,18 +12,20 @@ const Navbar = () => {
   return (
     <header className="text-gray-600 body-font flex justify-between w-full p-5">
       <div className="flex items-center">
-        <a className="flex font-medium items-center text-gray-900" href="/">
-          <img
-            src={'/images/icon.png'}
-            className="w-10 h-10 text-white p-2 bg-blue-900 rounded-full"
-            alt="logo"
-          />
-          <span className="ml-3 text-xl">Zeing</span>
-        </a>
-        <nav className="mr-auto ml-4 py-1 pl-4 border-l md:border-gray-400 hidden md:flex flex-wrap items-center justify-center">
-          <a href="/" className="mr-5 hover:text-gray-900">
-            Home
+        <Link href="/">
+          <a className="flex font-medium items-center text-gray-900">
+            <img
+              src={'/images/icon.png'}
+              className="w-10 h-10 text-white p-2 bg-blue-900 rounded-full"
+              alt="logo"
+            />
+            <span className="ml-3 text-xl">Zeing</span>
           </a>
+        </Link>
+        <nav className="mr-auto ml-4 py-1 pl-4 border-l md:border-gray-400 hidden md:flex flex-wrap items-center justify-center">
+          <Link href="/">
+            <a className="mr-5 hover:text-gray-900">Home</a>
+          </Link>
         </nav>
       </div>
       <div className="flex items-center md:hidden">

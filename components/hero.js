@@ -51,6 +51,11 @@ const Hero = ({ showNavbar = false, goTo }) => {
               {/* <Link href="/resume" passHref>
                 <div className={classHeader}>Resume</div>
               </Link> */}
+              <Link href="https://medium.com/zeing">
+                <a className={classHeader} target="_blank">
+                  Blog
+                </a>
+              </Link>
               <Link href="https://hollow.zeing.xyz">
                 <a className={classHeader} target="_blank">
                   Hollow Bot

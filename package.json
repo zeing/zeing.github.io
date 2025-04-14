@@ -2,6 +2,11 @@
   "name": "zeing",
   "version": "0.1.0",
   "private": true,
+  "description": "A personal website for Zeing",
+  "author": "Zeing",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

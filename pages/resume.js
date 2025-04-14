@@ -9,10 +9,10 @@ const ResumePage = () => {
     <>
       <Hero showNavbar goTo="#about" />
       <main className="flex flex-col w-full justify-center" id="about">
-        <div className="flex space-y-10 md:space-y-0 md:space-x-10 h-full w-full flex-wrap max-w-screen-xl p-20">
+        <div className="flex space-y-10 md:space-y-0 md:space-x-10 h-full w-full flex-wrap max-w-(--breakpoint-xl) p-20">
           <div className="flex justify-center w-full md:w-auto">
             <img
-              className="shadow rounded-full object-cover h-48 w-48"
+              className="shadow-sm rounded-full object-cover h-48 w-48"
               src="/images/profile.jpg"
               alt="Avatar"
               width="384"
@@ -47,7 +47,7 @@ const ResumePage = () => {
           </div>
         </div>
         <div className="bg-gray-100 p-20">
-          <div className="flex space-y-10 md:space-y-0 md:space-x-10 h-full w-full flex-wrap max-w-screen-xl">
+          <div className="flex space-y-10 md:space-y-0 md:space-x-10 h-full w-full flex-wrap max-w-(--breakpoint-xl)">
             <h2 className="text-4xl uppercase w-full md:w-auto">Contact</h2>
             <div className="flex-1 flex-col">
               <div className="flex items-center">

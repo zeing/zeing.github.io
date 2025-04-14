@@ -1,14 +1,37 @@
-@tailwind base;
-html {
-  @apply select-none font-display
+@import 'tailwindcss';
+
+@config '../tailwind.config.js';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
 }
 
-img, embed, object, video {
-  max-width: 100%;
-}
+@layer base {
+  html {
+    @apply select-none font-display;
+  }
 
-@tailwind components;
-@tailwind utilities;
+  img,
+  embed,
+  object,
+  video {
+    max-width: 100%;
+  }
+}
 
 .bg-video {
   position: absolute;
@@ -31,5 +54,5 @@ img, embed, object, video {
 
 /* Cursor */
 .typed-cursor {
-  @apply text-white text-opacity-75
+  @apply text-white/75
 }

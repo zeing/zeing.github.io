@@ -69,29 +69,14 @@ const Hero = ({ showNavbar = false, goTo }) => {
           </nav>
         )}
         <div className="flex flex-col space-y-4">
-          <div
-            className="h-60 w-60 rounded-full shadow-2xl bg-white bg-opacity-30 cursor-pointer"
-            // onClick={() => setShowInfo(!showInfo)}
-          >
-            {showInfo ? (
-              <div className="flex flex-col h-full w-full justify-center items-center space-y-2">
-                <span>WITTHAWIN SIRISIWAPHAK</span>
-                <a
-                  href="mailto:zeing@outlook.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Email: zeing@outlook.com
-                </a>
-              </div>
-            ) : (
-              <img
-                src="/images/profile.jpg"
-                className="h-full w-full rounded-full mx-auto object-cover relative"
-                width="384"
-                height="512"
-              />
-            )}
+          <div className="h-60 w-60 rounded-full shadow-2xl bg-white bg-opacity-30">
+            <img
+              src="/images/profile.jpg"
+              className="h-full w-full rounded-full mx-auto object-cover relative"
+              width="384"
+              height="512"
+              alt="profile"
+            />
           </div>
           <div className="text-center">
             <span className="text-white text-opacity-50 hover:text-white w-full my-title" />
@@ -127,9 +112,9 @@ const Hero = ({ showNavbar = false, goTo }) => {
             >
               <i className={classnames('fab fa-linkedin', classIcon)}></i>
             </a>
-            {/* <Link href="/blog">
-              <i className={classnames('fas fa-globe-asia', classIcon)}></i>
-            </Link> */}
+            <Link href="mailto:zeing@outlook.com" passHref target="_blank">
+              <i className={classnames('fas fa-envelope', classIcon)}></i>
+            </Link>
           </div>
         </div>
         {goTo && (

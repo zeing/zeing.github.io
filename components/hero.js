@@ -43,7 +43,7 @@ const Hero = ({ showNavbar = false, goTo }) => {
         {showNavbar && (
           <nav className="px-8 pt-2 absolute top-0 text-white text-opacity-75 font-thin">
             <div className="flex justify-center space-x-8">
-              <Link href="/" passHref legacyBehavior>
+              <Link href="/" passHref>
                 <div className={classHeader}>Home</div>
               </Link>
               {/* <Link href="/resume" passHref>

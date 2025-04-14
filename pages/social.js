@@ -1,5 +1,4 @@
 import * as React from 'react'
-import classnames from 'classnames'
 import Seo from 'components/seo'
 import Hero from 'components/hero'
 

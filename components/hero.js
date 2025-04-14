@@ -5,8 +5,6 @@ import Typed from 'typed.js'
 import Cover from 'react-video-cover'
 
 const Hero = ({ showNavbar = false, goTo }) => {
-  const [showInfo, setShowInfo] = React.useState(false)
-
   var options = {
     strings: [
       'WITTHAWIN SIRISIWAPHAK',

@@ -45,21 +45,25 @@ const Hero = ({ showNavbar = false, goTo }) => {
         {showNavbar && (
           <nav className="px-8 pt-2 absolute top-0 text-white text-opacity-75 font-thin">
             <div className="flex justify-center space-x-8">
-              <Link href="/" passHref>
+              <Link href="/" passHref legacyBehavior>
                 <div className={classHeader}>Home</div>
               </Link>
               {/* <Link href="/resume" passHref>
                 <div className={classHeader}>Resume</div>
               </Link> */}
-              <Link href="https://medium.com/zeing">
-                <a className={classHeader} target="_blank">
-                  Blog
-                </a>
+              <Link
+                href="https://medium.com/zeing"
+                className={classHeader}
+                target="_blank"
+              >
+                Blog
               </Link>
-              <Link href="https://hollow.zeing.xyz">
-                <a className={classHeader} target="_blank">
-                  Hollow Bot
-                </a>
+              <Link
+                href="https://hollow.zeing.xyz"
+                className={classHeader}
+                target="_blank"
+              >
+                Hollow Bot
               </Link>
             </div>
           </nav>
@@ -130,7 +134,7 @@ const Hero = ({ showNavbar = false, goTo }) => {
         </div>
         {goTo && (
           <nav className="absolute bottom-0 text-white text-opacity-75 pb-20 md:pb-10 text-4xl">
-            <Link href={goTo}>
+            <Link href={goTo} passHref>
               <div className="flex justify-center cursor-pointer">
                 <i className="fas fa-chevron-down animate-bounce"></i>
               </div>

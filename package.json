@@ -5,7 +5,7 @@
   "description": "A personal website for Zeing",
   "author": "Zeing",
   "engines": {
-    "node": "22.x"
+    "node": "21.x"
   },
   "scripts": {
     "dev": "next dev --turbopack",

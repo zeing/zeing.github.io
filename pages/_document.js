@@ -15,7 +15,11 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
-        <script src="https://kit.fontawesome.com/6e37d3b44a.js" crossOrigin="anonymous"></script>
+        <script
+          src="https://kit.fontawesome.com/6e37d3b44a.js"
+          crossOrigin="anonymous"
+          async
+        ></script>
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-SWWT8QB292`}

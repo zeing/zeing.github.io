@@ -87,7 +87,11 @@ const Hero = ({ showNavbar = false, goTo }) => {
             <span className="text-white text-opacity-50 hover:text-white w-full my-title" />
           </div>
           <div className="flex justify-around space-x-4">
-            <Link href="https://fb.com/einguht" target="_blank" rel="noreferrer">
+            <Link
+              href="https://fb.com/einguht"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className={classnames('fab fa-facebook', classIcon)}></i>
             </Link>
             <Link

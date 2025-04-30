@@ -49,12 +49,19 @@ const Hero = ({ showNavbar = false, goTo }) => {
               {/* <Link href="/resume" passHref>
                 <div className={classHeader}>Resume</div>
               </Link> */}
-              <Link
+              {/*<Link
                 href="https://medium.com/zeing"
                 className={classHeader}
                 target="_blank"
               >
                 Blog
+              </Link>*/}
+              <Link
+                href="https://discord.gg/juice-box"
+                className={classHeader}
+                target="_blank"
+              >
+                Discord Server
               </Link>
               <Link
                 href="https://hollow.zeing.xyz"

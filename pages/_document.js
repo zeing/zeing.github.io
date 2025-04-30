@@ -15,12 +15,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-          integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
-          crossOrigin="anonymous"
-        />
+        <script src="https://kit.fontawesome.com/6e37d3b44a.js" crossOrigin="anonymous"></script>
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-SWWT8QB292`}

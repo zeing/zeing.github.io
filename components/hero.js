@@ -61,7 +61,7 @@ const Hero = ({ showNavbar = false, goTo }) => {
                 className={classHeader}
                 target="_blank"
               >
-                Discord Server
+                Discord
               </Link>
               <Link
                 href="https://hollow.zeing.xyz"
@@ -87,10 +87,10 @@ const Hero = ({ showNavbar = false, goTo }) => {
             <span className="text-white text-opacity-50 hover:text-white w-full my-title" />
           </div>
           <div className="flex justify-around space-x-4">
-            <a href="https://fb.com/einguht" target="_blank" rel="noreferrer">
+            <Link href="https://fb.com/einguht" target="_blank" rel="noreferrer">
               <i className={classnames('fab fa-facebook', classIcon)}></i>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.instagram.com/zeing/"
               target="_blank"
               rel="noreferrer"
@@ -102,21 +102,28 @@ const Hero = ({ showNavbar = false, goTo }) => {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
                 </span>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.github.com/zeing/"
               target="_blank"
               rel="noreferrer"
             >
               <i className={classnames('fab fa-github', classIcon)}></i>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/witthawin/"
               target="_blank"
               rel="noreferrer"
             >
               <i className={classnames('fab fa-linkedin', classIcon)}></i>
-            </a>
+            </Link>
+            <Link
+              href="https://discord.gg/juice-box"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className={classnames('fab fa-discord', classIcon)}></i>
+            </Link>
             <Link href="mailto:zeing@outlook.com" passHref target="_blank">
               <i className={classnames('fas fa-envelope', classIcon)}></i>
             </Link>

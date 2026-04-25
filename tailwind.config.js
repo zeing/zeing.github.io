@@ -1,29 +1,15 @@
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
-  // purge: {
-  //   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  //   options: {
-  //     safelist: ['space-x-8'],
-  //   },
-  // },
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
     fontFamily: {
-      display: ['Prompt', 'sans-serif'],
-      body: ['Prompt', 'sans-serif'],
+      display: ['var(--font-prompt)', 'sans-serif'],
+      body: ['var(--font-prompt)', 'sans-serif'],
     },
     extend: {},
-  },
-  variants: {
-    extend: {
-      fontSize: ['hover', 'focus'],
-      scale: ['active', 'group-hover'],
-      opacity: ['group-hover'],
-      backgroundOpacity: ['group-hover'],
-    },
   },
   plugins: [],
 }
